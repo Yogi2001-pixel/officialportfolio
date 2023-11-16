@@ -1,0 +1,499 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.bodyBg {
+    background-color: #121229;
+    color: white;
+}
+
+.navbar, .aboutMeSection, .skillsSection {
+    width: 95%;
+    margin: auto;
+}
+
+.navbar img {
+    width: 120px;
+}
+
+.navbar ul li a:hover {
+    background-color: yellow;
+    color: black !important;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.heroSec {
+    padding: 80px;
+}
+
+.heroImg img {
+    width: 500px;
+    margin-right: 60px;
+}
+
+.heroContent {
+    padding: 60px;
+}
+
+.heroContent h1 {
+    width: 200px;
+}
+
+.socialMedia a {
+    color: white;
+}
+
+.socialMedia a:hover {
+    background-color: yellow;
+    color: black;
+    transition: .5s;
+}
+
+.socialMedia i {
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+.aboutmeImage img {
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.aboutContent {
+    margin-top: 10%;
+    margin-left: 8%;
+    user-select: none;
+}
+
+.aboutContent h1 {
+    width: 90%;
+    font-weight: bold;
+}
+
+.aboutContent p {
+    width: 600px;
+    font-size: 20px;
+}
+
+.cseContent, .yearContent {
+    margin-left: 4%;
+}
+
+.eduSection, .skillsSection, .contactSection {
+    margin-top: 7%;
+}
+
+.skill li {
+    list-style: none;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.skill {
+    width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    width: 550px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(139, 120, 132)0%, rgb(198, 184, 36)100%);
+}
+
+.html, .css, .bootstrap, .figma {
+    width: 90%;
+    animation: 3s;
+}
+
+.javascript {
+    width: 70%;
+    animation: 3s;
+}
+
+.jquery {
+    width: 80%;
+    animation: 3s;
+}
+
+.react {
+    width: 60%;
+    animation: 0.5s;
+}
+
+.wordpress {
+    width: 70%;
+    animation: 0.5s;
+}
+
+.contactSection a {
+    margin-left: 12%;
+    padding: 5px;
+    margin-top: 3%;
+}
+
+.contactOne {
+    margin-top: 5%;
+}
+
+.contactTwo {
+    margin-top: 3%;
+}
+
+.contactOne input, .contactTwo input {
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#workSection {
+    margin-top: 7%;
+}
+
+.workButton {
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.workCOntent {
+    margin-left: 3%;
+}
+
+.workImages {
+    position: relative;
+}
+
+.projectName, .projectFourName, .projectSevenName {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projectTwoName, .projectFiveName, .projectEightName {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projectThreeName, .projectSixName, .projectNineName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projectName, .projectTwoName, .projectThreeName, .projectFourName, .projectNineName {
+    width: 250px;
+    text-align: center;
+}
+
+.htmlDiv:hover .projectName, .bootstrapDiv:hover .projectTwoName, .bootstrapTwo:hover .projectThreeName,
+.javaScriptdiv:hover .projectFourName, .javaScripttwo:hover .projectFiveName, .figmaDiv:hover .projectSixName,
+.figmaTwoDiv:hover .projectSevenName, .reactDiv:hover .projectEightName, .reactTwo:hover .projectNineName {
+    opacity: 1;
+}
+
+
+.workImages img {
+    width: 450px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.message input {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.message {
+    width: 89%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+
+
+/*Code For Mobile Responsive*/
+@media (min-width:320px) and (max-width:500px) {
+    .navbar-toggler-icon i{
+        color: white;
+        font-size: 25px;
+    }
+
+    .heroContent {
+        padding: 4px;
+    }
+
+    .heroImg img {
+        width: 235px;
+    }
+
+    .socialMedia {
+        display: inline-flex;
+        flex-direction: row;
+        margin-bottom: 17%;
+        margin-right: 3%;
+    }
+
+    .aboutmeImage img {
+        width: 337px;
+        margin-left: 5%;
+    }
+
+    .aboutContent p {
+        font-size: 13px;
+        width: 324px;
+    }
+
+    .eduSection h1 {
+        font-size: 25px;
+    }
+
+    .educationList {
+        margin-left: 51px;
+    }
+
+    .eduSection, .skillsSection, .contactSection {
+        margin-top: 30%;
+    }
+
+    .skill {
+        margin-left: 9px;
+    }
+
+    .bar {
+        width: 290px;
+    }
+
+    .yearContent {
+        margin-left: -1%;
+    }
+
+    .yearContent h3 {
+        font-size: 20px;
+    }
+
+    .cseContent {
+        margin-left: 7%;
+    }
+
+    .cseContent h2 {
+        font-size: 26px;
+    }
+
+    .matricContent {
+        margin-left: 8%;
+    }
+
+    .skillsSection a {
+        margin-bottom: 6%;
+    }
+
+    .workButton {
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .workButton a {
+        font-size: 12px;
+    }
+
+    .workImages img {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin-bottom: 8%;
+    }
+
+    .workImages {
+        position: relative;
+    }
+
+
+    .projectName, .projectTwoName, .projectThreeName,
+    .projectFourName, .projectFiveName, .projectSixName,
+    .projectSevenName, .projectEightName, .projectNineName {
+        position: absolute;
+        transform: none;
+        left: 15%;
+        top: 30%;
+        text-align: center;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .contactSection a {
+        margin-top: 5%;
+    }
+
+    .contactOne input, .contactTwo input {
+        width: 373px;
+    }
+
+    .contactContentOne {
+        margin-left: 3%;
+        margin-bottom: 3%;
+    }
+
+    .message {
+        margin-right: 31px;
+        margin-top: 2%;
+    }
+
+    .message input {
+        width: 373px;
+    }
+
+    .copyrightSection p {
+        font-size: 13px;
+    }
+}
+
+/*Code For Mobile Responsive Ends*/
+
+
+@media (min-width:700px) and (max-width:851px) {
+    .navbar-toggler-icon i{
+        color: white;
+        font-size: 20px;
+    }
+
+    .heroContent {
+        padding: 10px;
+    }
+
+    .heroImg img {
+        display: none;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        margin-right: 5%;
+    }
+
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutmeImage img {
+        width: 400px;
+        margin-left: 18%;
+    }
+
+    .aboutContent {
+        margin-right: 6%;
+    }
+
+    .aboutContent a {
+        width: 90%;
+    }
+
+    .collegeContent {
+        margin-left: 4%;
+    }
+
+    .twelthContent {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .skillsSection {
+        margin-top: 13%;
+    }
+
+
+    .skill {
+        margin-left: 1%;
+        width: 100px;
+    }
+
+    .reactHead {
+        width: 300px;
+    }
+
+    .bar {
+        width: 650px;
+    }
+
+    .workButton {
+        margin-left: 22%;
+    }
+
+    .workImages img {
+        width: 700px;
+        height: 400px;
+        margin-left: 4%;
+        margin-bottom: 3%;
+    }
+
+    .contactContentOne {
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+
+    .contactContentOne input {
+        width: 700px;
+    }
+
+    .message input {
+        width: 97%;
+    }
+}
